@@ -11,20 +11,28 @@ export const GifExpertApp = () => {
     setCategories([newCategory, ...categories]);
   };
 
+  const img =
+    "https://raw.githubusercontent.com/Seabird15/Portafolio/main/imgs/gat.png";
+
   console.log(categories);
 
   return (
     <>
-      <h1>GifExpertApp</h1>
+      <div className="header">
+        <h1>GifExpertApp</h1>
+        <img src={img} alt="" />
+      </div>
 
       {/* Se pueden pasar props y llamarlas en el componente */}
       <AddCategory onNewCategory={(event) => onAddCategory(event)} />
 
-      
-        {categories.map((category) => (
-          <GifGrid key={category} category={category} />
-        ))}
-      
+      {categories.map((category) => (
+        <GifGrid key={category} category={category} />
+
+      ))}
+      <div className="footer">
+        <h5>By Daniela L. Aravena</h5>
+      </div>
     </>
   );
 };

@@ -8,7 +8,10 @@
     background: rgb(190,188,214);
     background: linear-gradient(90deg, rgba(190,188,214,1) 0%, rgba(118,148,237,1) 35%, rgba(161,225,238,1) 100%);
   }
-  
+  .header {
+    display: flex;
+    gap: 2rem;
+  }
   input {
     background-color: white;
     border-radius: 5px;
@@ -18,6 +21,7 @@
     outline: none;
     padding: 10px 15px;
     width: 100%;
+    box-shadow: 1px 2px 2px rgb(125, 124, 124);
   }
   input:hover{
     background: rgb(238,174,202);
@@ -69,4 +73,7 @@
   
   .card img {
     width: 100%;
+  }
+  .footer {
+    text-align: center;
   }
