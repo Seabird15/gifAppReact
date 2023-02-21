@@ -1,10 +1,12 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: rgb(234, 234, 234);
+    
   }
   
   body {
     padding: 60px;
+    background: rgb(190,188,214);
+    background: linear-gradient(90deg, rgba(190,188,214,1) 0%, rgba(118,148,237,1) 35%, rgba(161,225,238,1) 100%);
   }
   
   input {
@@ -17,18 +19,23 @@
     padding: 10px 15px;
     width: 100%;
   }
+  input:hover{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  }
   h1{
+    font-size: 4rem;
     text-shadow: 1px 1px 2px rgb(106, 105, 105)
   }
   h2 {
     font-size: 1.5rem;
   }
-  
   h3 {
     font-size: 3rem;
     margin-bottom: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
   }
-  
   .card-grid {
     display: flex;
     flex-direction: row;
@@ -39,7 +46,7 @@
   .card {
     align-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(252, 252, 252);
     border-radius: 10px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
     display: flex;
